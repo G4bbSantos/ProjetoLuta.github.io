@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Dc Justice Fighter</title>
+</head>
+<body>
+    <div class="AreaGeral">
+    <div class="AreaGame">
+        <div id="titleP">
+            <h1>Dc Justice Fighter</h1>
+        </div>
+        <div class="area-luta">
+            <div id="char">
+                <strong class="nome">Escolha o herói</strong>
+                <div class="barra-vida">
+                    <div class="barra"></div>
+                </div>
+                <div class="area-lutador">
+                    <div class="area">
+                        <div class="img"></div>
+                    </div>
+                    <div class="lutador">
+                        <a class="Batman" onclick="toggleButton(this)">Batman</a>
+                        <a class="Superman c" onclick="toggleButton(this)">Superman</a>
+                    </div>  
+                </div>
+            </div>
+            <h1 class="vs">VS</h1>
+            <div id="monstro">
+                <strong class="nome">Escolha o vilão</strong>
+                <div class="barra-vida">
+                    <div class="barra"></div>
+                </div>
+                <div class="area-lutador">
+                    <div class="area">
+                        <div class="img"></div>
+                    </div>
+                    <div class="lutador">
+                        <a class="Brainic" onclick="toggleButton2(this)">Brainic</a>
+                        <a class="Espantalho c" onclick="toggleButton2(this)">Espantalho</a>
+                    </div>           
+                </div>
+            </div>
+        </div>
+        <a class="play">Iniciar</a>
+        <a class="botão_atacar">Atacar</a>
+        <a href="" class="reset">Reiniciar</a>
+        <div class="area-acao">
+            <ul class="log"></ul>
+        </div>
+    </div>
+    </div>
+    <script src="assets/js/scriptfc.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

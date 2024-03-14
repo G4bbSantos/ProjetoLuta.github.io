@@ -1,0 +1,274 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Stick No Bills', sans-serif;
+    
+}
+
+
+
+
+/* AREA GERAL  */
+
+.AreaGeral{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../img/gotham-city-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.AreaGame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 99%;
+    height: 98%;
+    background-color: #000000bb;
+}
+
+
+
+
+/* Titulo Principal */
+
+#titleP{
+    width: 40%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    border: 2px solid rgb(0, 140, 255);
+    background-color: rgb(238, 255, 0);
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#titleP h1{
+    font-size: 47px;
+    margin-bottom: 5px;
+    color: #313131;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+
+/* AREA DE LUTA */
+
+/* Geral */
+
+.area-luta{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: rgb(238, 255, 0);
+    padding: 15px;
+    color: #000;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 140, 255);
+    width: 70%;
+    height: 430px;
+}
+
+#char, #monstro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vs{
+    color: rgb(238, 255, 0);
+    margin-top: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 50px;
+    text-shadow: 3px 2px 6px #000000;
+}
+
+
+/* Elementos do Char e monster */
+
+/* Nome e barra de vida */
+
+.nome{
+ font-size: 20px;
+}
+
+.barra-vida{
+    display: none;
+    width: 500px;
+    height: 15px;
+    border-radius: 5px;
+    background-color: #FFF;
+}
+.barra{
+    display: none;
+    height: inherit;
+    background-color: rgb(0, 119, 255);
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out .5s;
+}
+
+/* Botão de escolha e foto */
+
+/*Botão*/
+
+.area-lutador{
+    display: flex;
+    height: 300px;
+    width: auto;
+    margin-top: 5px;
+    flex-direction: column;
+}
+.lutador{
+    display: flex;
+    flex-direction: row;
+    margin-right: 5px;
+    margin-left: 5px;
+    
+}
+.lutador a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 130px;
+    background-color: rgb(0, 140, 255);
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(238, 255, 0);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+
+    
+}
+.lutador a:hover{
+    background-color: rgb(0, 162, 255);
+}
+
+.lutador a:active{
+    background-color: rgb(29, 143, 236);
+}
+
+.lutador a.selected {
+    background-color: rgb(41, 78, 109);
+}
+
+.lutador a.selected2 {
+    background-color: rgb(41, 78, 109);
+}
+
+.c{
+    margin-left: 10px;
+}
+
+/*Imagem*/
+
+.area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(0, 140, 255);
+    border: 1px solid #E9D2B8;
+    border-radius: 10px;
+}
+
+
+/* BOTÂO DE ATAQUE, INICIAR E RENICIAR*/
+
+
+.botão_atacar{
+    display: none;
+}
+.play, .reset, .botão_atacar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(0, 140, 255);
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(238, 255, 0);
+    font-size: 33px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.reset{
+    display: none;
+}
+
+.botão_atacar{
+    display: none;
+}
+
+.play:hover, .reset:hover, .botão_atacar:hover{
+    background-color: rgb(0, 162, 255);
+}
+
+.play:active, .reset:active, .botão_atacar:active{
+    background-color: rgb(29, 143, 236);
+}
+
+
+/* LOG */
+
+.log{
+    margin-top: 20px;
+    border: 3px solid rgb(0, 140, 255);
+    height: 100px;
+    width: 550px;
+    font-weight: bold;
+    overflow-y: scroll; /*Colocar uma barra de rolagem*/
+    text-align: center;
+    background-color: rgb(238, 255, 0);
+    font-size: 20px;
+    overflow: hidden; /*Esconder scroll*/
+    border-radius: 10px;
+
+}
+
+/* MSG DE FIM DE JOGO */
+
+dialog{
+    bottom: 300px;
+    background-color: #E9D2B8;
+    border: 1px solid #451B0B;
+    width: 15%;
+    height: 10%;
+    margin: auto;
+    border-radius: 5px;
+}
+dialog p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+dialog a{
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.5)
+    ;
+}
+
+
