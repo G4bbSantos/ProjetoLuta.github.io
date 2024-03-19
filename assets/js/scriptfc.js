@@ -99,9 +99,7 @@ const AreaGeral = {
             atacado.vida -= ataqueAtual;
             if(atacado.vida < 0){
                 atacado.vida = 0;
-                document.querySelector('.vence').showModal();
-                document.querySelector('.vence p').innerText = `${atacante.name} venceu!`
-                
+                alert(`${atacante.name} Venceu!!!`)
             }
             log.addMessage(`${atacante.name} causou ${ataqueAtual.toFixed(2)} de dano em ${atacado.name}.`)
         }else{

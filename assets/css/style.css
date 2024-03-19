@@ -91,6 +91,7 @@
     margin-right: 5px;
     font-size: 50px;
     text-shadow: 3px 2px 6px #000000;
+    max-height: 70%;
 }
 
 
@@ -104,7 +105,7 @@
 
 .barra-vida{
     display: none;
-    width: 500px;
+    width: 100%;
     height: 15px;
     border-radius: 5px;
     background-color: #FFF;
@@ -135,7 +136,7 @@
     margin-left: 5px;
     
 }
-.lutador a{
+.lutador .a{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,19 +153,19 @@
 
     
 }
-.lutador a:hover{
+.lutador .a:hover{
     background-color: rgb(0, 162, 255);
 }
 
-.lutador a:active{
+.lutador .a:active{
     background-color: rgb(29, 143, 236);
 }
 
-.lutador a.selected {
+.lutador .a.selected {
     background-color: rgb(41, 78, 109);
 }
 
-.lutador a.selected2 {
+.lutador.a.selected2 {
     background-color: rgb(41, 78, 109);
 }
 
@@ -192,11 +193,7 @@
 
 /* BOTÂO DE ATAQUE, INICIAR E RENICIAR*/
 
-
-.botão_atacar{
-    display: none;
-}
-.play, .reset, .botão_atacar{
+.play, .reset{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -217,6 +214,18 @@
 
 .botão_atacar{
     display: none;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+    background-color: rgb(0, 140, 255);
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(238, 255, 0);
+    font-size: 33px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 .play:hover, .reset:hover, .botão_atacar:hover{
@@ -239,7 +248,7 @@
     overflow-y: scroll; /*Colocar uma barra de rolagem*/
     text-align: center;
     background-color: rgb(238, 255, 0);
-    font-size: 20px;
+    font-size: 18px;
     overflow: hidden; /*Esconder scroll*/
     border-radius: 10px;
 

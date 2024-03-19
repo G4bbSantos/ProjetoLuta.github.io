@@ -70,13 +70,18 @@ document.querySelector('.play').addEventListener('click',() => {
         document.querySelector(`${mostrar[i]}`).style.display = 'flex'
     }
 
+    CenterBtn = ['#monstro .lutador','#char .lutador']
+    for(let i in CenterBtn){
+        document.querySelector(`${CenterBtn[i]}`).style.justifyContent = 'center';
+    }
+
     
 })
 
 // Botão heroi
 function toggleButton(button) {
     // Remove a classe 'selected' de todos os botões
-    var buttons = document.querySelectorAll('.lutador a');
+    var buttons = document.querySelectorAll('.lutador .a');
     buttons.forEach(function(btn) {
         btn.classList.remove('selected');
     });
@@ -88,7 +93,7 @@ function toggleButton(button) {
 //Vilão
 function toggleButton2(button) {
     // Remove a classe 'selected' de todos os botões
-    var buttons = document.querySelectorAll('.lutador a');
+    var buttons = document.querySelectorAll('.lutador .a');
     buttons.forEach(function(btn) {
         btn.classList.remove('selected2');
     });
